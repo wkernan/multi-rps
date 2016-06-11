@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplayer - Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container-fluid text-center">
+		<h1 class="title">Multiplayer Rock, Paper, Scissors</h1>
+		<form class="form-inline text-center playerName" id="playerForm">
+			<div class="form-group">
+				<label>Player Name</label>
+				<input type="text" class="form-control" id="player" placeholder="Player Name">
+				<button type="submit" class="btn btn-success" id="playerSubmit">Start</button>
+			</div>
+		</form>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<div id="player1">
+					<h3>Waiting for Player 1...</h3>
+				</div>
+				<div class="choices">
+					<div class="row">
+						<div class="hide" id="choices1">
+							<div class="col-md-4">
+								<i class="fa fa-hand-rock-o fa-5x choice1" id="rock1"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fa fa-hand-paper-o fa-5x choice1" id="paper1"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fa fa-hand-scissors-o fa-5x choice1" id="scissors1"></i>
+							</div>
+						</div>
+						<div class="col-md-6 hide" id="choiceOne">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="showGame" id="score">
+					<h1>Score</h1> 
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div id="player2">
+					<h3>Waiting for Player 2...</h3>
+				</div>
+				<div class="choices">
+					<div class="row">
+						<div class="hide" id="choices2">
+							<div class="col-md-4">
+								<i class="fa fa-hand-rock-o fa-5x choice2" id="rock2"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fa fa-hand-paper-o fa-5x choice2" id="paper2"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fa fa-hand-scissors-o fa-5x choice2" id="scissors2"></i>
+							</div>
+						</div>
+						<div class="col-md-6 hide" id="choiceTwo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="textBox text-left" id="textArea">
+		</div>
+		<form class="form-inline playerText">
+			<div class="form-group">
+				<input type="text" class="form-control" id="playerText">
+				<button class="btn btn-primary" id="post">Post</button>
+			</div>
+		</form>
+	</div>
+<script src="https://use.fontawesome.com/ea4903a042.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>

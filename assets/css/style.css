@@ -1,0 +1,41 @@
+body {
+	background-color: #EEEEEE;
+}
+
+.hide {
+	display: none;
+}
+
+.title {
+	font-size: 55px;
+	margin-bottom: 30px;
+}
+
+.playerName {
+	margin-bottom: 20px;
+}
+
+.choices .row {
+	display: inline-flex;
+}
+
+.textBox {
+	background-color: white;
+	height: 200px;
+	overflow: auto;
+	width: 50%;
+	margin: 20px auto 15px;
+}
+
+.textBox p {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+#playerText {
+	width: 565px;
+}
+
+i:hover {
+	cursor: pointer;
+}
